@@ -1,9 +1,12 @@
-import React from 'react'
 
-const Boton = () => {
+
+const Boton = ({nombre, contador, clic}) => {
   return (
-    <div>Boton</div>
-  )
-}
+    <div>
+        <p>Cantidad de Clic:  {contador}</p>
+        <button onClick={clic}>{nombre}</button>
+    </div>
 
-export default Boton
+)}
+
+export default Boton 
